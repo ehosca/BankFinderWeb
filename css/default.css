@@ -1,0 +1,60 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: smaller;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#MySplitter {
+    height: 100%;
+    margin: 0;
+    min-height: 300px; /* ... or too flat */
+    /* Height is set to match window size in $().ready() below */
+    min-width: 500px; /* Splitter can't be too thin ... */
+    width: 100%;
+}
+
+#LeftPane {
+    background-color: AliceBlue;
+    overflow: auto; /* Scroll bars appear as needed */
+    padding: 8px;
+}
+
+#RightPane {
+    background: #fff;
+    min-width: 100px;
+    overflow: auto;
+    padding: 0px;
+    /* No margin or border allowed */
+}
+
+#MySplitter .vsplitbar {
+    cursor: ew-resize;
+    width: 4px;
+}
+
+#MySplitter .vsplitbar.active, #MySplitter .vsplitbar:hover { background: grey; }
+
+.treeview, .treeview ul {  
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
+}     
+ 
+.treeview li {  
+    margin: 0; 
+    padding: 4px 0 3px 20px; 
+} 
+ 
+.treeview li { font-size :xx-small; background: url(../images/tv-item.gif) 0 0 no-repeat; } 
+.treeview .collapsable { background-image: url(../images/tv-collapsable.gif); } 
+.treeview .expandable { background-image: url(../images/tv-expandable.gif); } 
+.treeview .last { background-image: url(../images/tv-item-last.gif); } 
+.treeview .lastCollapsable { background-image: url(../images/tv-collapsable-last.gif); } 
+.treeview .lastExpandable { background-image: url(../images/tv-expandable-last.gif); }
